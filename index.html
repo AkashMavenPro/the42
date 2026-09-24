@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE 42 @ Middleton | Mani Group — Where Timeless Luxury Begins</title>
+<meta name="description" content="THE 42 @ Middleton by Mani Group, Kolkata — Vastu conducive, columnless, 360-degree open apartments. A life of swanky luxury, exciting spaces and stylish opulence.">
+<link rel="icon" href="assets/logo.png" type="image/png">
+
+<!-- Tailwind CSS (latest, Play CDN) + project theme -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+<!-- ============ NAVBAR ============ -->
+<header id="top" class="fixed top-0 inset-x-0 z-50">
+  <nav id="navbar" class="transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 flex items-center justify-between h-20">
+      <a href="#top" class="flex items-center shrink-0">
+        <img src="assets/logo.png" alt="THE 42 @ Middleton" class="h-11 sm:h-14 w-auto drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)]">
+      </a>
+
+      <ul id="navLinks" class="hidden lg:flex items-center gap-10 text-xs tracking-widest2 uppercase text-white">
+        <li><a href="#about" class="hover:text-amber-500 transition-colors">About</a></li>
+        <li><a href="#mani-group" class="hover:text-amber-500 transition-colors">Mani Group</a></li>
+        <li><a href="#brochure" class="hover:text-amber-500 transition-colors">Brochure</a></li>
+      </ul>
+
+      <a id="ctaNav" href="#contact" class="hidden lg:inline-flex items-center text-xs tracking-widest2 uppercase font-semibold text-white hover:text-amber-500 transition-colors">
+        Convey Interest
+      </a>
+
+      <!-- mobile toggle -->
+      <button id="menuBtn" aria-label="Open menu" class="lg:hidden text-white p-2 -mr-2">
+        <svg id="iconOpen" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconClose" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="lg:hidden hidden bg-navy-950/98 backdrop-blur border-t border-white/10">
+      <ul class="flex flex-col px-6 py-6 gap-5 text-sm tracking-widest2 uppercase text-white/90">
+        <li><a href="#about" class="block py-1 hover:text-amber-500">About</a></li>
+        <li><a href="#mani-group" class="block py-1 hover:text-amber-500">Mani Group</a></li>
+        <li><a href="#brochure" class="block py-1 hover:text-amber-500">Brochure</a></li>
+        <li class="pt-2">
+          <a href="#contact" class="font-semibold text-amber-500">Convey Interest</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="relative min-h-screen flex flex-col overflow-hidden bg-navy-950">
+  <img src="assets/hero-bg.jpg"
+       alt="THE 42 tower over Kolkata skyline at dusk" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+  <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/10 to-navy-950/60"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-navy-950/70 via-transparent to-transparent"></div>
+
+  <div class="relative z-10 flex-1 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 sm:pt-44">
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-normal leading-[1.1] max-w-xl text-white reveal">
+      Where timeless<br>luxury begins
+    </h1>
+  </div>
+
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pb-10 sm:pb-16 flex items-end justify-between gap-6">
+    <p class="text-white/70 text-xs tracking-widest2 uppercase reveal">© Mani Group</p>
+    <p class="text-[#FFFDF5] font-bold text-2xl sm:text-[32px] text-right max-w-[357px] leading-[100%] tracking-normal reveal">
+      A life of swanky luxury, exciting spaces and stylish opulence.
+    </p>
+  </div>
+</section>
+
+<!-- ============   ============ -->
+<section id="about" class="bg-white py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+
+      <!-- left: small images + label -->
+      <div class="lg:col-span-5 flex flex-col justify-between gap-10 order-2 lg:order-1">
+        <img src="assets/c02b.jpg"
+             alt="THE 42 lobby entrance" class="reveal w-44 sm:w-48 lg:w-56 aspect-[197/249] object-cover shadow-lg shadow-black/10">
+        <p class="reveal text-[26px] sm:text-[32px] font-medium leading-[1.15] tracking-normal text-[#40331D]">Where luxury<br>feels like home</p>
+        <img src="assets/Main-Lobby.jpg"
+             alt="THE 42 tower and main entrance" class="reveal w-44 sm:w-48 lg:w-56 aspect-[225/293] object-cover shadow-lg shadow-black/10 self-start">
+      </div>
+
+      <!-- right: heading + big image -->
+      <div class="lg:col-span-7 order-1 lg:order-2 flex flex-col">
+        <h2 class="reveal text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.15] lg:leading-[1.05] font-medium text-ink">
+          Feel at home at an address that is a perfect fit for your personality.
+          <span class="text-[#CA912F]">Within an address, that opens the door into tomorrow.</span>
+        </h2>
+
+        <img src="assets/LOBBY2.jpg"
+             alt="Elegant marble living room interior" class="reveal mt-10 w-full aspect-[627/848] object-cover shadow-xl shadow-black/10">
+      </div>
+    </div>
+
+    <div class="reveal mt-10 sm:mt-12 text-center">
+      <a href="#amenities" class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest2 text-ink hover:text-amber-500 transition-colors">
+        Read More
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO INTRO ============ -->
+<section class="relative w-full aspect-[1440/870] overflow-hidden bg-navy-950">
+  <video class="absolute inset-0 w-full h-full object-cover" src="assets/the42-video-intro.mp4" autoplay muted loop playsinline></video>
+  <div class="absolute inset-0 bg-navy-950/35"></div>
+</section>
+
+<!-- ============ SPACE QUIETLY OPULENT ============ -->
+<section id="amenities" class="bg-white py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="text-center mb-8 sm:mb-14 reveal">
+      <p class="text-[#9A6100] text-lg sm:text-xl">Space, Quietly Opulent.</p>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-normal text-ink mt-1">Experience Quietly Unforgettable.</h2>
+    </div>
+
+    <div class="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-8 sm:gap-y-12">
+      <figure class="reveal">
+        <img src="assets/swiming-pool.jpg" alt="Infinity pool in the sky" class="w-full aspect-[538/586] object-cover">
+        <figcaption class="mt-2 sm:mt-4 text-sm sm:text-2xl md:text-[32px] font-semibold sm:font-medium leading-snug sm:leading-[1.15] text-[#40331D]">Infinity pool<br>in the sky</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="assets/outdoor-deck.jpg" alt="Triple height terraces and sundecks" class="w-full aspect-[538/586] object-cover">
+        <figcaption class="mt-2 sm:mt-4 text-sm sm:text-2xl md:text-[32px] font-semibold sm:font-medium leading-snug sm:leading-[1.15] text-[#40331D]">Triple height terraces<br>and sundecks.</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="assets/banquite.jpg" alt="Elegant banquet and pre function hall" class="w-full aspect-[538/586] object-cover">
+        <figcaption class="mt-2 sm:mt-4 text-sm sm:text-2xl md:text-[32px] font-semibold sm:font-medium leading-snug sm:leading-[1.15] text-[#40331D]">Elegant banquet<br>&amp; pre-function hall</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="assets/pool-and-deck.jpg" alt="360-degree open apartments" class="w-full aspect-[538/586] object-cover">
+        <figcaption class="mt-2 sm:mt-4 text-sm sm:text-2xl md:text-[32px] font-semibold sm:font-medium leading-snug sm:leading-[1.15] text-[#40331D]">360-degree open<br>apartments</figcaption>
+      </figure>
+    </div>
+
+    <div class="text-center mt-8 sm:mt-14 reveal">
+      <a href="#amenities" class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest2 text-[#40331D] hover:text-[#9A6100] transition-colors">
+        View All
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHOWRINGHEE ============ -->
+<section class="relative w-full aspect-[4/3] overflow-hidden bg-navy-950">
+  <img src="assets/Asset 1.png"
+       alt="Aerial view of Chowringhee, Kolkata at golden hour" class="absolute inset-0 w-full h-full object-cover object-[50%_65%]">
+
+  <img src="assets/buildinggg the 42new.png"
+       alt="THE 42 tower's crown of gothic-arched spires" class="reveal absolute bottom-0 left-0 w-full h-auto">
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-[116px] reveal">
+    <h2 class="font-normal uppercase text-[56px] leading-[100%] tracking-[0%]">
+      <span class="block text-[#9A6100]">Chowringhee</span>
+      <span class="block text-[#40331D]">A timeless spot.</span>
+    </h2>
+  </div>
+</section>
+
+<!-- ============ FEATURES (accordion) ============ -->
+<section id="features" class="bg-white py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-10 mb-10">
+      <p class="reveal text-xs tracking-widest2 uppercase text-ink/60">Features</p>
+      <h2 class="reveal font-medium leading-[1.15] text-2xl sm:text-3xl md:text-4xl">
+        <span class="block text-[#9A6100]">Transforming luxury</span>
+        <span class="block text-[#40331D]">into timeless spaces</span>
+      </h2>
+    </div>
+
+    <div class="divide-y divide-ink/10 border-t border-b border-ink/10">
+      <details class="reveal group py-8" open>
+        <summary class="flex items-start justify-between gap-6">
+          <div class="flex items-baseline gap-5">
+            <span class="text-2xl sm:text-3xl font-semibold text-ink">01</span>
+            <span class="text-2xl sm:text-3xl font-normal text-ink">Vastu conducive</span>
+          </div>
+          <span class="text-2xl text-ink/60 shrink-0 mt-1">
+            <span class="plus">+</span><span class="minus">&minus;</span>
+          </span>
+        </summary>
+        <div class="mt-5 grid sm:grid-cols-3 gap-6 items-start pl-0 sm:pl-16">
+          <p class="sm:col-span-2 text-ink/60 text-sm sm:text-base max-w-sm">
+            1 Apartment per floor on a Vastu conducive North-East oriented corner plot.
+          </p>
+          <img src="assets/LOBBY2.jpg" alt="Marble lounge with view of THE 42 grounds" class="w-full aspect-[531/396] object-cover">
+        </div>
+      </details>
+
+      <details class="reveal group py-8">
+        <summary class="flex items-start justify-between gap-6">
+          <div class="flex items-baseline gap-5">
+            <span class="text-2xl sm:text-3xl font-semibold text-ink">02</span>
+            <span class="text-2xl sm:text-3xl font-normal text-ink">Clear height</span>
+          </div>
+          <span class="text-2xl text-ink/60 shrink-0 mt-1">
+            <span class="plus">+</span><span class="minus">&minus;</span>
+          </span>
+        </summary>
+        <div class="mt-5 pl-0 sm:pl-16">
+          <p class="text-ink/60 text-sm sm:text-base max-w-sm">
+            Generous clear ceiling heights that let every room breathe with light and air.
+          </p>
+        </div>
+      </details>
+
+      <details class="reveal group py-8">
+        <summary class="flex items-start justify-between gap-6">
+          <div class="flex items-baseline gap-5">
+            <span class="text-2xl sm:text-3xl font-semibold text-ink">03</span>
+            <span class="text-2xl sm:text-3xl font-normal text-ink">Columnless homes</span>
+          </div>
+          <span class="text-2xl text-ink/60 shrink-0 mt-1">
+            <span class="plus">+</span><span class="minus">&minus;</span>
+          </span>
+        </summary>
+        <div class="mt-5 pl-0 sm:pl-16">
+          <p class="text-ink/60 text-sm sm:text-base max-w-sm">
+            Uninterrupted, columnless living spaces designed for effortless flexibility.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="text-center mt-14 reveal">
+      <a href="#features" class="inline-flex items-center gap-2 text-xs tracking-widest2 uppercase font-semibold text-ink border-b border-ink/40 pb-1 hover:text-amber-500 hover:border-amber-500 transition-colors">
+        View All Features
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NIGHT BANNER ============ -->
+<section class="relative w-full aspect-[1440/948] overflow-hidden">
+  <img src="assets/Surrounding-Hero.jpg"
+       alt="THE 42 tower lit up at night amid the city" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-navy-950/20"></div>
+</section>
+
+<!-- ============ MANI GROUP LINEAGE ============ -->
+<section id="mani-group" class="bg-white py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="text-center mb-14 reveal">
+      <h2 class="font-medium leading-[100%] tracking-[0%] text-3xl sm:text-5xl lg:text-[64px]">
+        <span class="block text-ink">Developing Under The</span>
+        <span class="block"><span class="text-maroon-600">Mani</span> <span class="text-amber-500">Group</span> <span class="text-ink">Lineage</span></span>
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-[280px_1fr] gap-10 sm:gap-14 items-center">
+      <div class="reveal justify-self-center sm:justify-self-start">
+        <img src="assets/Image.png"
+             alt="Sanjay Jhunjhunwala, CEO Mani Group" class="w-56 sm:w-64 h-auto object-contain">
+      </div>
+      <div class="reveal">
+        <p class="text-lg sm:text-2xl leading-relaxed text-ink/90">
+          &ldquo;Mani Group was founded with one core belief &ndash; of building homes for people who believe in quality. Over the last four decades, we have delivered more than 30 million sq. ft to more than 5000+ families&hellip;&rdquo;
+        </p>
+        <p class="mt-6 text-amber-500 font-semibold">Sanjay Jhunjhunwala</p>
+        <p class="text-ink/50 text-sm">CEO, Mani Group</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section class="relative w-full aspect-[1442/1134] overflow-hidden bg-white">
+  <img src="assets/map.png" alt="Map showing THE 42 @ Middleton location in Kolkata" class="reveal absolute inset-0 w-full h-full object-cover">
+</section>
+
+<!-- ============ CONVEY INTEREST CTA ============ -->
+<section id="brochure" class="relative w-full aspect-[1442/742] overflow-hidden">
+  <img src="assets/Facade View.jpg" alt="Looking up at THE 42 tower façade" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-[#000000]/60"></div>
+
+  <div class="relative z-10 h-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-10 sm:py-14 flex flex-col justify-between reveal">
+    <h2 class="font-semibold text-white max-w-md leading-[100%] tracking-[0%] text-3xl sm:text-4xl lg:text-[56px]">
+      A world of leisure few will ever experience.
+    </h2>
+
+    <div class="flex flex-col-reverse sm:flex-row sm:items-end sm:justify-between gap-6">
+      <a href="#contact" class="inline-flex items-center gap-2 text-xs tracking-widest2 uppercase font-semibold text-white hover:text-amber-500 transition-colors shrink-0">
+        Convey Interest
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <p class="font-bold text-white leading-[100%] tracking-[0%] text-lg sm:text-2xl max-w-sm sm:text-right">
+        Envisioned by Mani Group, connoisseurs of luxury who have already delivered J.W. Marriott Kolkata, Vivara Residences, and The 42.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER / CONTACT ============ -->
+<footer id="contact" class="bg-cream-100 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="grid sm:grid-cols-3 gap-10 mb-14">
+
+      <div>
+        <img src="assets/logo.png" alt="THE 42 @ Middleton" class="h-12 w-auto drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]">
+        <div class="leading-none mt-8">
+          <p class="text-2xl font-semibold text-maroon-600">mani</p>
+          <p class="text-[10px] tracking-widest2 uppercase text-ink/50 mt-1">change for good</p>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-bold leading-[100%] tracking-[0%] text-2xl text-ink mb-4">Nav</h4>
+        <ul class="space-y-2.5 text-ink/80">
+          <li><a href="#about" class="hover:text-amber-500 transition-colors">About</a></li>
+          <li><a href="#mani-group" class="hover:text-amber-500 transition-colors">Mani Group</a></li>
+          <li><a href="#brochure" class="hover:text-amber-500 transition-colors">Brochure</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold leading-[100%] tracking-[0%] text-2xl text-ink mb-4">Contact</h4>
+        <address class="not-italic text-ink/80 leading-relaxed space-y-2">
+          <p>9-IT Chambers, Mani Square,<br>164/1 Maniktala Main Road,<br>Kolkata 700 054</p>
+          <p>
+            <a href="tel:+913323407100" class="hover:text-amber-500 transition-colors">+91 33 23407100</a> |
+            <a href="tel:+913323201878" class="hover:text-amber-500 transition-colors">+91 33 23201878</a>
+          </p>
+        </address>
+      </div>
+    </div>
+
+    <div class="border-t border-ink/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ink/50">
+      <div class="flex items-center gap-6 order-2 sm:order-1">
+        <a href="#" class="hover:text-amber-500 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-amber-500 transition-colors">T&amp;C</a>
+      </div>
+      <p class="order-1 sm:order-2">© Mani Group Copyright 2026, All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
