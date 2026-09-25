@@ -27,6 +27,22 @@ body {
   transform: translateY(0);
 }
 
+/* Hero video frame: frosted blurred border around the video, with thin guide lines */
+.hero-frame-band {
+  position: absolute;
+  z-index: 1;
+  background: rgba(70, 80, 95, 0.35);
+  -webkit-backdrop-filter: blur(14px) saturate(0.8);
+  backdrop-filter: blur(14px) saturate(0.8);
+}
+
+.hero-frame-line {
+  position: absolute;
+  z-index: 2;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
 /* Intro / splash screen: warm cream backdrop with a faded spire watermark */
 .splash-bg {
   background-color: #efe3c8;
@@ -38,9 +54,35 @@ body {
   background-size: 220% auto;
 }
 
+/* "An Experience Extraordinary": pale off-white backdrop with the spire
+   artwork washed out into soft white streaks */
+.experience-bg {
+  background-color: #f2f0ec;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.experience-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('../buildinggg the 42 new@2x.png') no-repeat center 20% / 240% auto;
+  filter: grayscale(1) brightness(1.6) contrast(0.6) blur(2px);
+  opacity: 0.55;
+}
+
+.experience-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.685), rgba(242, 240, 236, 0.6));
+}
+
 /* Dark line-art map: recolor the light map artwork for a black background */
 .map-dark {
-  filter: invert(1) grayscale(1) brightness(0.9) contrast(1.1);
+  filter: invert(1) grayscale(1) brightness(1.8);
 }
 
 /* Features / experience accordion */
@@ -53,12 +95,12 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] .plus {
-  display: none;
+.acc-chevron {
+  transition: transform 0.3s ease;
 }
 
-details:not([open]) .minus {
-  display: none;
+details[open] .acc-chevron {
+  transform: rotate(180deg);
 }
 
 /* Amenity carousel */

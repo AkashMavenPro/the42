@@ -13,7 +13,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets-2/css/style.css">
 </head>
@@ -21,10 +21,10 @@
 <body class="bg-white text-ink antialiased">
 
 <!-- ============ MENU (fixed, minimal) ============ -->
-<header class="fixed top-0 left-0 z-50 p-5 sm:p-8">
-  <button id="menuBtn" aria-label="Open menu" class="flex flex-col items-start gap-1.5 hover:opacity-75 transition-opacity">
-    <img src="assets-2/menu.png" alt="" class="w-4 h-4" aria-hidden="true">
-    <span class="text-[10px] tracking-widest2 uppercase text-[#40331D] font-medium">Menu</span>
+<header class="fixed top-0 left-5 sm:left-[7.2vw] z-50">
+  <button id="menuBtn" aria-label="Open menu" class="flex flex-col items-center gap-1.5 sm:gap-[1.4vw] hover:opacity-75 transition-opacity">
+    <img src="assets-2/menu.png" alt="" class="block w-[22px] h-[36px] sm:w-[4.3vw] sm:h-[6.9vw] min-[1440px]:w-[62px] min-[1440px]:h-[100px]" aria-hidden="true">
+    <span class="font-jost text-[9px] sm:text-[1.1vw] min-[1440px]:text-[16px] leading-none uppercase text-[#6B3410]">Menu</span>
   </button>
 </header>
 
@@ -41,36 +41,47 @@
 </div>
 
 <!-- ============ INTRO / SPLASH ============ -->
-<section class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden px-5 bg-[#efe3c8]">
+<section class="relative min-h-[100svh] sm:min-h-0 sm:aspect-[651/487] flex flex-col items-center justify-center sm:justify-start sm:pt-[25.2vw] text-center overflow-hidden px-5 bg-[#efe3c8]">
   <video class="absolute inset-0 w-full h-full object-cover" src="assets-2/the 42 dome shape 3d element.mp4" autoplay muted loop playsinline></video>
-  <div class="absolute inset-0 bg-gradient-to-b from-[#efe3c8]/55 via-[#e0ca96]/45 to-[#e0ca96]/70"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-[#f3e8cc]/55 via-[#ecdcb2]/40 to-[#e6d19f]/55"></div>
 
   <div class="relative z-10 reveal w-full flex justify-center">
-    <img src="assets-2/Logo The 42.png" alt="THE 42 @ Middleton" class="w-[51.3%] max-w-[620px] min-w-[220px] h-auto">
+    <img src="assets-2/Logo The 42.png" alt="THE 42 @ Middleton" class="w-[110%] max-w-none sm:max-w-full sm:w-[70.2%] h-auto">
   </div>
-  <div class="relative z-10 mt-12 sm:mt-16 reveal">
-    <p class="text-[#40331D] text-xs sm:text-sm tracking-widest2 uppercase">A Lifestyle That</p>
-    <p class="text-[#9A6100] text-xs sm:text-sm tracking-widest2 uppercase font-semibold mt-1">Belongs To The Top Rung</p>
+  <div class="relative z-10 mt-10 sm:mt-[8.3vw] reveal font-jost uppercase font-normal leading-[1.35] text-[15px] sm:text-[1.9vw]">
+    <p class="text-[#2B2116]">A Lifestyle That</p>
+    <p class="text-[#7A4510]">Belongs To The Top Rung</p>
   </div>
 </section>
 
 <!-- ============ HERO VIDEO ============ -->
 <section class="relative w-full aspect-[1440/780] overflow-hidden bg-navy-950">
   <video class="absolute inset-0 w-full h-full object-cover" src="assets-2/the 42 video intro.mp4" autoplay muted loop playsinline></video>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/10"></div>
+
+  <!-- Blurred frame bands (top, bottom, left, right) over the video -->
+  <div class="hero-frame-band top-0 left-0 right-0 h-[12.5%]"></div>
+  <div class="hero-frame-band bottom-0 left-0 right-0 h-[12.5%]"></div>
+  <div class="hero-frame-band top-[12.5%] bottom-[12.5%] left-0 w-[4%]"></div>
+  <div class="hero-frame-band top-[12.5%] bottom-[12.5%] right-0 w-[4%]"></div>
+
+  <!-- Frame lines -->
+  <div class="hero-frame-line top-0 bottom-0 left-[4%]"></div>
+  <div class="hero-frame-line top-0 bottom-0 right-[4%]"></div>
+  <div class="hero-frame-line top-0 h-[12.5%] left-1/2"></div>
+  <div class="hero-frame-line bottom-0 h-[12.5%] left-1/2"></div>
 </section>
 
 <!-- ============ A LIFESTYLE FOR / THE TOP RUNG ============ -->
-<section class="bg-white py-16 sm:py-24">
-  <div class="max-w-5xl mx-auto px-5 sm:px-8 text-center reveal">
+<section class="bg-white pt-16 pb-16 sm:pt-[9vw] sm:pb-[7vw]">
+  <div class="w-full sm:w-[80%] max-w-[1160px] mx-auto px-5 sm:px-0 text-center reveal">
     <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-6">
-      <h2 class="uppercase text-2xl sm:text-3xl md:text-4xl font-medium text-[#40331D]">A Lifestyle For</h2>
-      <h2 class="uppercase text-2xl sm:text-3xl md:text-4xl font-medium text-[#40331D]">The Top Rung</h2>
+      <h2 class="font-jost uppercase font-normal leading-none text-[#6B3410] text-[28px] sm:text-[3.9vw] min-[1440px]:text-[56px]">A Lifestyle For</h2>
+      <h2 class="font-jost uppercase font-normal leading-none text-[#6B3410] text-[28px] sm:text-[3.9vw] min-[1440px]:text-[56px]">The Top Rung</h2>
     </div>
-    <p class="mt-5 text-ink/70 text-sm sm:text-base">A life of swanky luxury, exciting spaces<br class="hidden sm:block"> and stylish opulence</p>
+    <p class="mt-5 sm:mt-[3vw] min-[1440px]:mt-11 text-[#333] text-sm sm:text-[1.5vw] min-[1440px]:text-[21px] leading-snug">A life of swanky luxury, exciting spaces<br> and stylish opulence</p>
 
-    <div class="mt-10 sm:mt-12 reveal">
-      <img src="assets-2/Surrounding Hero (3).jpg" alt="THE 42 tower rising over Kolkata at dusk" class="w-full aspect-[1360/570] object-cover">
+    <div class="mt-8 sm:mt-[4.4vw] min-[1440px]:mt-16 reveal">
+      <img src="assets-2/Surrounding Hero (3).jpg" alt="THE 42 tower rising over Kolkata at dusk" class="w-full aspect-[581/359] object-cover object-center">
     </div>
   </div>
 </section>
@@ -93,7 +104,7 @@
     </figure>
     <figure class="reveal relative aspect-square overflow-hidden bg-black">
       <img src="assets-2/Surrounding Hero (3).jpg" alt="" class="w-full h-full object-cover opacity-40" aria-hidden="true">
-      <figcaption class="absolute inset-0 flex items-center justify-center px-4 text-white text-xs sm:text-sm tracking-widest2 uppercase text-center">
+      <figcaption class="absolute inset-0 flex items-center justify-center px-4 text-white font-jost font-normal text-sm sm:text-lg md:text-[24px] leading-[100%] tracking-[0%] uppercase text-center">
         Because nothing less will do
       </figcaption>
     </figure>
@@ -114,150 +125,169 @@
 </section>
 
 <!-- ============ AN EXPERIENCE EXTRAORDINARY ============ -->
-<section id="experience" class="relative splash-bg py-20 sm:py-28">
-  <div class="max-w-4xl mx-auto px-5 text-center reveal">
-    <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-6">
-      <h2 class="uppercase text-2xl sm:text-3xl md:text-4xl font-medium text-[#622B00]">An Experience</h2>
-      <h2 class="uppercase text-2xl sm:text-3xl md:text-4xl font-medium text-[#622B00]">Extraordinary</h2>
+<section id="experience" class="relative experience-bg pt-16 pb-16 sm:pt-[9vw] sm:pb-[7vw]">
+  <div class="relative w-full sm:w-[85%] max-w-[1240px] mx-auto px-5 sm:px-0">
+    <div class="text-center reveal">
+      <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-6">
+        <h2 class="font-jost uppercase font-normal leading-none text-[#6B3410] text-[28px] sm:text-[3.9vw] min-[1440px]:text-[56px]">An Experience</h2>
+        <h2 class="font-jost uppercase font-normal leading-none text-[#6B3410] text-[28px] sm:text-[3.9vw] min-[1440px]:text-[56px]">Extraordinary</h2>
+      </div>
+      <p class="mt-5 sm:mt-[3vw] min-[1440px]:mt-11 mx-auto max-w-[36em] text-[#555555] font-normal text-sm sm:text-[1.5vw] min-[1440px]:text-[21px] leading-[1.15] text-center">
+        Enter a space where moments unfold in quietude and light. The grand entrance features a triple height ground floor entrance lobby
+      </p>
     </div>
-    <p class="mt-5 text-[#555555] font-normal text-[24px] leading-[100%] tracking-[0%] text-center max-w-2xl mx-auto">
-      Enter a space where moments unfold in quietude and light. The grand entrance features a triple height ground floor entrance lobby
-    </p>
-  </div>
 
-  <div class="max-w-5xl mx-auto px-5 mt-14 grid sm:grid-cols-2 gap-10 sm:gap-14 items-center reveal">
-    <img src="assets-2/c02b.jpg" alt="Grand entrance lobby with hanging origami bird sculpture" class="w-full aspect-[548/566] object-cover shadow-xl shadow-black/10">
+    <div class="mt-10 sm:mt-[5vw] min-[1440px]:mt-[72px] flex flex-col sm:flex-row sm:justify-between sm:items-end gap-10 reveal">
+      <img src="assets-2/c02b.jpg" alt="Grand entrance lobby with hanging origami bird sculpture" class="w-full sm:w-[44%] aspect-[274/318] object-cover">
 
-    <div class="divide-y divide-[#555555]/30 border-t border-b border-[#555555]/30 self-center">
-      <details class="group py-5" open>
-        <summary class="flex items-center justify-between gap-4 text-[#151515] font-medium text-sm sm:text-base">
-          Seamless movement across all car parking levels.
-          <span class="text-[#555555] shrink-0"><span class="plus">+</span><span class="minus">&minus;</span></span>
-        </summary>
-      </details>
-      <details class="group py-5">
-        <summary class="flex items-center justify-between gap-4 text-[#151515] font-medium text-sm sm:text-base">
-          24/7 concierge and valet service.
-          <span class="text-[#555555] shrink-0"><span class="plus">+</span><span class="minus">&minus;</span></span>
-        </summary>
-      </details>
-      <details class="group py-5">
-        <summary class="flex items-center justify-between gap-4 text-[#151515] font-medium text-sm sm:text-base">
-          Private lift lobby for every residence.
-          <span class="text-[#555555] shrink-0"><span class="plus">+</span><span class="minus">&minus;</span></span>
-        </summary>
-      </details>
+      <div class="w-full sm:w-[50%] sm:mb-[12%]">
+        <details class="border-b border-[#555555]/60" open>
+          <summary class="flex items-center justify-between gap-4 py-3 sm:py-[1.2vw] min-[1440px]:py-[18px] text-[#151515] font-normal text-sm sm:text-[1.5vw] min-[1440px]:text-[21px] leading-snug">
+            Seamless movement across all car parking levels.
+            <svg class="acc-chevron shrink-0 w-3 h-3 sm:w-[1vw] sm:h-[1vw] min-[1440px]:w-[14px] min-[1440px]:h-[14px] mr-[7%] text-[#151515]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 4.5l4 4 4-4"/></svg>
+          </summary>
+        </details>
+        <details class="border-b border-[#555555]/60">
+          <summary class="flex items-center justify-between gap-4 py-3 sm:py-[1.2vw] min-[1440px]:py-[18px] text-[#151515] font-normal text-sm sm:text-[1.5vw] min-[1440px]:text-[21px] leading-snug">
+            24/7 concierge and valet service.
+            <svg class="acc-chevron shrink-0 w-3 h-3 sm:w-[1vw] sm:h-[1vw] min-[1440px]:w-[14px] min-[1440px]:h-[14px] mr-[7%] text-[#151515]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 4.5l4 4 4-4"/></svg>
+          </summary>
+        </details>
+        <details class="border-b border-[#555555]/60">
+          <summary class="flex items-center justify-between gap-4 py-3 sm:py-[1.2vw] min-[1440px]:py-[18px] text-[#151515] font-normal text-sm sm:text-[1.5vw] min-[1440px]:text-[21px] leading-snug">
+            Private lift lobby for every residence.
+            <svg class="acc-chevron shrink-0 w-3 h-3 sm:w-[1vw] sm:h-[1vw] min-[1440px]:w-[14px] min-[1440px]:h-[14px] mr-[7%] text-[#151515]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 4.5l4 4 4-4"/></svg>
+          </summary>
+        </details>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CHOWRINGHEE ============ -->
-<section id="chowringhee" class="relative w-full aspect-[4/3] overflow-hidden bg-navy-950">
-  <img src="assets-2/Asset 1.png" alt="Aerial view of Chowringhee, Kolkata at golden hour" class="absolute inset-0 w-full h-full object-cover object-[50%_65%]">
-  <img src="assets-2/buildinggg the 42 new@2x.png" alt="THE 42 tower's crown of gothic-arched spires" class="reveal absolute left-[6.4%] right-[6.5%] top-[24.5%] bottom-0">
+<section id="chowringhee" class="relative w-full aspect-[4/5] sm:aspect-[1440/1071] overflow-hidden bg-[#e9dccb]">
+  <img src="assets-2/Asset 1.png" alt="Aerial view of Chowringhee, Kolkata at golden hour" class="absolute inset-0 w-full h-full object-cover object-[50%_70%] sm:object-[50%_67%]">
+  <!-- Warm haze fading the sky into the heading area -->
+  <div class="absolute inset-0 bg-gradient-to-b from-[#f7efe4]/90 via-[#f3e6d4]/45 via-40% to-transparent to-60%" aria-hidden="true"></div>
 
-  <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-8 pt-8 sm:pt-14 text-center reveal">
-    <h2 class="font-normal uppercase text-lg sm:text-2xl md:text-[40px] leading-tight text-[#622B00]">
+  <img src="assets-2/buildinggg the 42 new@2x.png" alt="THE 42 tower's crown of gothic-arched spires" class="reveal absolute h-auto max-w-none left-[-12%] w-[124%] bottom-[-4%] sm:left-[6.6%] sm:w-[87%] sm:bottom-auto sm:top-[28.7%]">
+
+  <div class="relative z-10 w-full sm:w-[70%] max-w-[1010px] mx-auto px-5 sm:px-0 pt-12 sm:pt-[9vw] min-[1440px]:pt-[130px] text-center reveal">
+    <h2 class="font-jost uppercase font-normal leading-none text-[#6B3410] text-[26px] sm:text-[3.6vw] min-[1440px]:text-[52px]">
       Chowringhee A Timeless Spot.
     </h2>
-    <p class="mt-2 sm:mt-4 text-[#555555] font-normal text-xs sm:text-base md:text-[24px] leading-tight md:leading-[100%] tracking-[0%] text-center max-w-2xl mx-auto">
+    <p class="mt-4 sm:mt-[2vw] min-[1440px]:mt-7 text-[#444444] font-normal text-sm sm:text-[1.5vw] min-[1440px]:text-[21px] leading-[1.2] text-center">
       A timeless iconic boulevard in Kolkata, the location stands as a timeless emblem of heritage and progress. Once a regal avenue of the British Raj, it has gracefully evolved into the city's premier business and cultural district.
-      <span class="text-[#9A6100] font-medium">An address that's reserved for the truly deserving.</span>
+      <span class="text-[#6B3410]">An address that's reserved for the truly deserving.</span>
     </p>
   </div>
 </section>
 
 <!-- ============ FACADE + AMENITY CAROUSEL ============ -->
-<section class="relative w-full aspect-[1440/1000] overflow-hidden reveal flex items-center">
-  <img src="assets-2/Facade View.jpg" alt="Looking up at THE 42 tower façade" class="absolute inset-0 w-full h-full object-cover">
+<section class="relative w-full aspect-[651/803] overflow-hidden reveal">
+  <img src="assets-2/Facade View.jpg" alt="Looking up at THE 42 tower façade" class="absolute inset-0 w-full h-full object-cover object-center">
 
-  <div id="amenityCarousel" class="relative z-10 mx-5 sm:mx-10 sm:w-[380px] bg-white/10 backdrop-blur-md border border-white/25 p-5 sm:p-7">
-    <p class="text-white text-sm sm:text-base font-semibold tracking-wide mb-4">
+  <!-- Frosted glass amenity card -->
+  <div id="amenityCarousel" class="absolute z-10 left-[8%] right-[8%] bottom-[8%] sm:right-auto sm:bottom-auto sm:left-[8.8%] sm:top-[40.5%] sm:w-[46%] rounded sm:rounded-[0.6vw] bg-white/20 backdrop-blur-xl text-center text-white px-4 pt-8 pb-8 sm:px-0 sm:pt-[7.2vw] sm:pb-[6.9vw]">
+    <p class="font-jost uppercase font-medium tracking-[0.02em] leading-[1.3] text-[15px] sm:text-[2.07vw]">
       A World Of Leisure<br>That Few Will Ever Experience.
     </p>
 
-    <div class="flex items-center gap-4">
-      <button class="carousel-prev text-white/80 hover:text-white text-2xl leading-none px-1" aria-label="Previous">&lsaquo;</button>
+    <div class="mt-6 sm:mt-[5.7vw] flex items-center justify-center gap-4 sm:gap-[1.8vw]">
+      <button class="carousel-prev shrink-0 text-white/90 hover:text-white transition-colors" aria-label="Previous">
+        <svg class="w-3 h-5 sm:w-[1.3vw] sm:h-[2.2vw]" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 1L1 7l6 6"/></svg>
+      </button>
 
-      <div class="flex-1">
+      <div class="w-[60%] sm:w-[54%]">
         <div class="carousel-slide active">
-          <img src="assets-2/Surrounding Hero (4).jpg" alt="3-level rooftop clubhouse" class="w-full aspect-[358/294] object-cover">
-          <p class="mt-3 text-white/90 text-xs sm:text-sm text-center">3-level rooftop clubhouse on the top 3 floors of the tower.</p>
+          <img src="assets-2/Surrounding Hero (4).jpg" alt="3-level rooftop clubhouse" class="w-full aspect-[162/158] object-cover">
+          <p class="mt-4 sm:mt-[3vw] text-white/90 text-xs sm:text-[1.55vw] leading-[1.2]">3-level rooftop clubhouse on the top<br> 3 floors of the tower.</p>
         </div>
         <div class="carousel-slide">
-          <img src="assets-2/Game Room.jpg" alt="Indoor golf simulator and games room" class="w-full aspect-[358/294] object-cover">
-          <p class="mt-3 text-white/90 text-xs sm:text-sm text-center">An indoor golf simulator and games room for every mood.</p>
+          <img src="assets-2/Game Room.jpg" alt="Indoor golf simulator and games room" class="w-full aspect-[162/158] object-cover">
+          <p class="mt-4 sm:mt-[3vw] text-white/90 text-xs sm:text-[1.55vw] leading-[1.2]">An indoor golf simulator and games<br> room for every mood.</p>
         </div>
         <div class="carousel-slide">
-          <img src="assets-2/Banquet (1).jpg" alt="Elegant banquet hall" class="w-full aspect-[358/294] object-cover">
-          <p class="mt-3 text-white/90 text-xs sm:text-sm text-center">A marble banquet hall built for grand occasions.</p>
+          <img src="assets-2/Banquet (1).jpg" alt="Elegant banquet hall" class="w-full aspect-[162/158] object-cover">
+          <p class="mt-4 sm:mt-[3vw] text-white/90 text-xs sm:text-[1.55vw] leading-[1.2]">A marble banquet hall built<br> for grand occasions.</p>
         </div>
       </div>
 
-      <button class="carousel-next text-white/80 hover:text-white text-2xl leading-none px-1" aria-label="Next">&rsaquo;</button>
+      <button class="carousel-next shrink-0 text-white/90 hover:text-white transition-colors" aria-label="Next">
+        <svg class="w-3 h-5 sm:w-[1.3vw] sm:h-[2.2vw]" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg>
+      </button>
     </div>
   </div>
 </section>
 
 <!-- ============ AT THE CENTER OF EVERYTHING ============ -->
-<section id="location" class="bg-black py-16 sm:py-20">
-  <div class="max-w-4xl mx-auto px-5 text-center reveal">
+<section id="location" class="bg-blackpt-14 sm:pt-[8.5vw] min-[1440px]:pt-[122px] overflow-hidden">
+  <div class="w-full sm:w-[85%] max-w-[1240px] mx-auto px-5 sm:px-0 text-center reveal">
     <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-6">
-      <h2 class="uppercase text-2xl sm:text-3xl md:text-4xl font-medium text-amber-500">At The Center</h2>
-      <h2 class="uppercase text-2xl sm:text-3xl md:text-4xl font-medium text-amber-500">Of Everything</h2>
+      <h2 class="font-jost uppercase font-normal leading-none text-[#F0C23B] text-[28px] sm:text-[3.9vw] min-[1440px]:text-[56px]">At The Center</h2>
+      <h2 class="font-jost uppercase font-normal leading-none text-[#F0C23B] text-[28px] sm:text-[3.9vw] min-[1440px]:text-[56px]">Of Everything</h2>
     </div>
+  </div>
+
+  <!-- Divider rule with end + centre ticks -->
+  <div class="relative mt-10 sm:mt-[5.7vw] min-[1440px]:mt-[82px] h-px bg-white/35" aria-hidden="true">
+    <span class="absolute top-0 left-[0.8%] w-px h-[7px] sm:h-[0.9vw] bg-white/35"></span>
+    <span class="absolute top-0 left-1/2 w-px h-[7px] sm:h-[0.9vw] bg-white/35"></span>
+    <span class="absolute top-0 right-[0.8%] w-px h-[7px] sm:h-[0.9vw] bg-white/35"></span>
+  </div>
+
+  <div class="relative w-full aspect-[717/560] reveal">
+    <img src="assets-2/map.png" alt="Map showing THE 42 @ Middleton location in Kolkata" class="map-dark absolute inset-0 w-full h-full object-cover">
   </div>
 </section>
 
-<!-- ============ DARK MAP ============ -->
-<section class="relative w-full aspect-[1440/850] bg-black overflow-hidden reveal">
-  <img src="assets-2/map.png" alt="Map showing THE 42 @ Middleton location in Kolkata" class="map-dark absolute inset-0 w-full h-full object-cover">
-</section>
-
 <!-- ============ FOOTER / CONTACT ============ -->
-<footer id="contact" class="bg-black text-white pt-16 pb-8">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-    <div class="grid sm:grid-cols-3 gap-10 mb-14">
+<footer id="contact" class="relative bg-black text-white pt-14 pb-12 sm:pt-[9vw] sm:pb-[7.7vw]">
+  <!-- Thin side rules framing the footer -->
+  <span class="hidden sm:block absolute top-0 bottom-0 left-[3.1%] w-px bg-white/15" aria-hidden="true"></span>
+  <span class="hidden sm:block absolute top-0 bottom-0 right-[3.4%] w-px bg-white/15" aria-hidden="true"></span>
 
+  <div class="px-6 sm:pl-[6.8%] sm:pr-[7%]">
+    <div class="grid grid-cols-1 sm:grid-cols-[31.8%_15.9%_1fr] gap-y-10 sm:gap-y-[2.2vw]">
+
+      <!-- Row 1 -->
       <div>
-        <div class="overflow-hidden w-[190px]" style="height: 39px;">
-          <img src="assets-2/Logo The 42.png" alt="THE 42" class="w-[190px] h-auto">
-        </div>
-        <p class="text-white text-xs tracking-widest3 uppercase mt-1">@ Middleton</p>
-
-        <div class="leading-none mt-8">
-          <p class="text-2xl font-semibold text-maroon-600">mani</p>
-          <p class="text-[10px] tracking-widest2 uppercase text-white/50 mt-1">change for good</p>
-        </div>
+        <img src="assets-2/logo.png" alt="THE 42 @ Middleton" class="w-[200px] sm:w-[24vw] h-auto">
       </div>
 
-      <div>
-        <h4 class="font-normal text-white/60 mb-4">Nav</h4>
-        <ul class="space-y-2.5 text-white font-semibold">
+      <div class="font-jost sm:pt-[1.2vw]">
+        <h4 class="font-normal text-white/70 text-base sm:text-[1.7vw] leading-none">Nav</h4>
+        <ul class="mt-4 sm:mt-[2vw] space-y-2 sm:space-y-[0.9vw] text-white font-medium text-base sm:text-[1.7vw] leading-none">
           <li><a href="#experience" class="hover:text-amber-500 transition-colors">About</a></li>
           <li><a href="#chowringhee" class="hover:text-amber-500 transition-colors">Mani Group</a></li>
           <li><a href="#location" class="hover:text-amber-500 transition-colors">Brochure</a></li>
         </ul>
       </div>
 
-      <div>
-        <h4 class="font-normal text-white/60 mb-4">Contact</h4>
-        <address class="not-italic text-white font-semibold leading-relaxed space-y-2">
-          <p>9-IT Chambers, Mani Square,<br>164/1 Maniktala Main Road,<br>Kolkata 700 054</p>
-          <p>
+      <div class="font-jost sm:pt-[1.2vw]">
+        <h4 class="font-medium text-white text-base sm:text-[1.7vw] leading-none">Contact</h4>
+        <address class="not-italic mt-4 sm:mt-[2vw] text-white font-medium text-sm sm:text-[1.4vw] leading-[1.35]">
+          <p>9-IT Chambers, Mani Square,164/1 Maniktala<br>Main Road, Kolkata 700 054</p>
+          <p class="mt-4 sm:mt-[3.6vw]">
             <a href="tel:+913323407100" class="hover:text-amber-500 transition-colors">+91 33 23407100</a> |
             <a href="tel:+913323201878" class="hover:text-amber-500 transition-colors">+91 33 23201878</a>
           </p>
         </address>
       </div>
-    </div>
 
-    <div class="border-t border-white/15 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-      <div class="flex items-center gap-6 order-2 sm:order-1">
-        <a href="#" class="hover:text-amber-500 transition-colors">Privacy Policy</a>
-        <a href="#" class="hover:text-amber-500 transition-colors">T&amp;C</a>
+      <!-- Row 2 -->
+      <div class="flex items-end order-last sm:order-none">
+        <img src="assets-2/mani-logo.png" alt="Mani Group — change for good" class="w-[110px] sm:w-[11.3vw] h-auto">
       </div>
-      <p class="order-1 sm:order-2">© Mani Group Copyright 2026, All Rights Reserved</p>
+
+      <div class="flex items-end text-sm sm:text-[1.4vw] leading-none text-white/80 sm:pb-[0.4vw]">
+        <a href="#" class="hover:text-amber-500 transition-colors">Privacy Policy</a>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-end gap-3 sm:gap-[4.2vw] text-sm sm:text-[1.4vw] leading-none text-white/80 sm:pb-[0.4vw]">
+        <a href="#" class="hover:text-amber-500 transition-colors">T&amp;C</a>
+        <p>© Mani Group Copyright 2026, All Rights Reserved</p>
+      </div>
     </div>
   </div>
 </footer>

@@ -11,6 +11,7 @@ tailwind.config = {
       },
       fontFamily: {
         sans: ['"Archivo"', 'Helvetica', 'Arial', 'sans-serif'],
+        jost: ['"Jost"', '"Archivo"', 'Helvetica', 'Arial', 'sans-serif'],
       },
       letterSpacing: { widest2: '.22em', widest3: '.3em' },
     },
